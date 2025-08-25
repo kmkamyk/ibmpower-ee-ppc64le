@@ -29,24 +29,25 @@ dependencies:
     pexpect>=4.5
     receptorctl
 
-collections:
-  # IBM Power
-  - name: ibm.power_hmc
-  - name: ibm.power_aix
-  - name: ibm.power_vios
-  - name: ibm.power_ibmi
-  - name: enfence.powerha_aix
-  - name: ibm.powervc
-
-  # Community
-  - name: community.general
-  - name: ansible.posix
-  - name: community.crypto
-  - name: community.network
-  - name: ansible.utils
-
-  # Optional
-  - name: redhatinsights.insights
+  galaxy: |
+    ---
+    collections:
+      - name: ibm.power_hmc
+      - name: ibm.power_aix
+      - name: ibm.power_vios
+      - name: ibm.power_ibmi
+      - name: enfence.powerha_aix
+      - name: ibm.powervc
+    
+      # Community
+      - name: community.general
+      - name: ansible.posix
+      - name: community.crypto
+      - name: community.network
+      - name: ansible.utils
+    
+      # Optional
+      - name: redhatinsights.insights
 
 additional_build_steps:
   prepend: |
