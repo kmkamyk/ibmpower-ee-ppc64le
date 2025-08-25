@@ -16,7 +16,8 @@ It has been specifically tailored for the **`ppc64le`** architecture and include
   - `ansible.posix`
 
 ## Build locally
-To build the EE image on your workstation:```bash
+To build the EE image on your workstation:
+```bash
 pip install ansible-builder docker
 ansible-builder build -t ee-ibmpower-ppc64le:latest -f execution-environment.yml
 ```
