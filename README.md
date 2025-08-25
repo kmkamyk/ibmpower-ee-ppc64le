@@ -15,8 +15,6 @@ It has been specifically tailored for the **`ppc64le`** architecture and include
   - `community.general`
   - `ansible.posix`
 
-> ⚠️ **Note:** To simplify the build process on `ppc64le`, more complex collections like `enfence.powerha_aix`, `ibm.powervc`, `community.crypto`, `community.network`, and `ansible.utils` have been intentionally **excluded** from this configuration.
-
 ## Build locally
 To build the EE image on your workstation:```bash
 pip install ansible-builder docker
