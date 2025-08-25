@@ -27,7 +27,6 @@ dependencies:
     ncclient
     paramiko
     pexpect>=4.5
-    receptorctl
 
   galaxy: |
     ---
@@ -48,10 +47,10 @@ dependencies:
     
       # Optional
       - name: redhatinsights.insights
-
 additional_build_steps:
-  prepend: |
-    RUN microdnf install -y dnf && microdnf clean all
-    RUN dnf -y update && dnf clean all
-  append: |
-    RUN pip3 install --upgrade pip
+  append_base:
+    - RUN dnf -y update && dnf clean all
+    - RUN $PYCMD -m pip install -U pip
+  append_final:
+    - RUN git lfs install --system
+    - RUN alternatives --install /usr/bin/python python /usr/bin/python3.11 311
