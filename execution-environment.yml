@@ -6,7 +6,7 @@ images:
 
 dependencies:
   python_interpreter:
-    package_system: python3.11
+    package_system: python3.11 python3.11-cryptography
     python_path: /usr/bin/python3.11
 
   ansible_core:
