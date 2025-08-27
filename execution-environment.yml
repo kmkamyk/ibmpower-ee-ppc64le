@@ -45,11 +45,7 @@ dependencies:
     libxml2-devel
     libxslt-devel
   python: |
-    paramiko
-    pyOpenSSL
     pyyaml
-    six
-    pexpect
     wheel
     setuptools
 
