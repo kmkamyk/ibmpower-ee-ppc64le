@@ -29,12 +29,7 @@ dependencies:
       # UNIX/Linux utilities
       - name: ansible.posix
       - name: community.general
-      - name: community.crypto
-      - name: community.network
       - name: ansible.utils
-
-      # Insights
-      - name: redhatinsights.insights
 
   system: |
     sshpass
@@ -49,7 +44,6 @@ dependencies:
     krb5-workstation
     libxml2-devel
     libxslt-devel
-    libatomic
   python: |
     paramiko
     pyOpenSSL
