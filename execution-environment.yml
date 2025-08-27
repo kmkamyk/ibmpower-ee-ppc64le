@@ -49,7 +49,7 @@ dependencies:
     krb5-workstation
     libxml2-devel
     libxslt-devel
-
+    libatomic
   python: |
     paramiko
     pyOpenSSL
