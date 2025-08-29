@@ -49,6 +49,9 @@ dependencies:
     krb5-workstation
     libxml2-devel
     libxslt-devel
+  pip:
+    - name: bcrypt
+      install: false
   python: |
     paramiko
     pykerberos
