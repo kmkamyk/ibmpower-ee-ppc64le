@@ -50,12 +50,10 @@ dependencies:
     libxml2-devel
     libxslt-devel
   python: |
-    paramiko
     pykerberos
     pyOpenSSL
     pypsrp[kerberos,credssp]
     pywinrm[kerberos,credssp]
-    bcrypt==0.0.0
     toml
     pexpect>=4.5
     python-daemon
