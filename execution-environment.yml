@@ -60,8 +60,6 @@ dependencies:
     python-daemon
     pyyaml
     six
-    receptorctl
-
 additional_build_steps:
   append_base:
     - RUN $PYCMD -m pip install --upgrade pip wheel setuptools
