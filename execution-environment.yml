@@ -2,7 +2,7 @@
 version: 3
 images:
   base_image:
-    name: hub.docker.com/r/ppc64le/rockylinux/rockylinux:9
+    name: docker.io/rockylinux:9
 dependencies:
   python_interpreter:
     package_system: python3.11 python3.11-cryptography
