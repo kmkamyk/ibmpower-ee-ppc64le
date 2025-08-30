@@ -50,6 +50,7 @@ dependencies:
     libxml2-devel
     libxslt-devel
   python: |
+    paramiko
     pykerberos
     pyOpenSSL
     pypsrp[kerberos,credssp]
