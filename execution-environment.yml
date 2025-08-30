@@ -36,18 +36,31 @@ dependencies:
       - name: ansible.utils
 
   system: |
-    sshpass
-    rsync
-    python3.11-devel
-    gcc
-    libffi-devel
-    openssl-devel
-    unzip
-    git
-    krb5-devel
-    krb5-workstation
-    libxml2-devel
-    libxslt-devel
+    git-core [platform:rpm]
+    python3.11-devel [platform:rpm compile]
+    python3.11-cryptography [platform:rpm compile]
+    libcurl-devel [platform:rpm compile]
+    krb5-devel [platform:rpm compile]
+    krb5-workstation [platform:rpm]
+    subversion [platform:rpm]
+    git-lfs [platform:rpm]
+    sshpass [platform:rpm]
+    redhat-rpm-config [platform:rpm compile]
+    rsync [platform:rpm]
+    epel-release [platform:rpm]
+    unzip [platform:rpm]
+    podman-remote [platform:rpm]
+    epel-release [platform:rpm]
+    cmake [platform:rpm compile]
+    gcc [platform:rpm compile]
+    gcc-c++ [platform:rpm compile]
+    gcc-toolset-12 [platform:rpm compile]
+    make [platform:rpm compile]
+    openssl-devel [platform:rpm compile]
+    rust [platform:rpm compile]
+    libffi-devel [platform:rpm compile]
+    libxml2-devel [platform:rpm arch:ppc64le compile]
+    libxslt-devel [platform:rpm arch:ppc64le compile]
   python: |
     paramiko
     pykerberos
