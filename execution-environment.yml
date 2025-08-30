@@ -2,8 +2,7 @@
 version: 3
 images:
   base_image:
-    name: quay.io/centos/rockylinux:9
-
+    name: hub.docker.com/r/ppc64le/rockylinux/rockylinux:9
 dependencies:
   python_interpreter:
     package_system: python3.11 python3.11-cryptography
